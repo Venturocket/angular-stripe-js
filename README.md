@@ -6,6 +6,12 @@ All the credit card related methods from Stripe.js are mirrored in a service for
 `vr.StripeJS.service` in your module declaration and inject `StripeJS` where you need it.  
 Everything here requires Stripe.js. Here are the docs for that: https://stripe.com/docs/stripe.js
 
+**NOTE:** You can set your publishable key:
+```
+angular.module('vr.StripeJS.service')
+	.value('publishableKey','YOUR PUBLISHABLE KEY');
+```
+
 ## Filters
 ### Card Type
 #### Usage

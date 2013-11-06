@@ -28,7 +28,7 @@ angular.module('vr.StripeJS.directives.validation.expiration.month', ['vr.Stripe
 				}
 				
 				ctrl.$parsers.unshift(function(value) {
-					return valid(value) ? value : undefined;
+					return (valid(value) || elem.prop('tagName') == 'SELECT') ? value : undefined;
 				});
 				ctrl.$formatters.unshift(function(value) {
 					valid(value);
@@ -56,7 +56,7 @@ angular.module('vr.StripeJS.directives.validation.expiration.year', ['vr.StripeJ
 				}
 				
 				ctrl.$parsers.unshift(function(value) {
-					return valid(value) ? value : undefined;
+					return (valid(value) || elem.prop('tagName') == 'SELECT') ? value : undefined;
 				});
 				ctrl.$formatters.unshift(function(value) {
 					valid(value);
