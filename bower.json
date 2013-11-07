@@ -1,6 +1,6 @@
 {
     "name": "angular-stripe-js",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "main": "./build/angular-stripe-js.min.js",
     "ignore": [
         "**/.*",

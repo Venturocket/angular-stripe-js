@@ -42,4 +42,8 @@ describe('Stripe Card Type Filter', function() {
 		expect(filter('7142424242424242')).toBe("Unknown");
 	});
 	
+	it("should say an undefined card is unknown", function() {
+		expect(filter(undefined)).toBe("Unknown");
+	});
+	
 });
