@@ -68,8 +68,13 @@ stripe-jcb
 stripe-unknown
 ```
 #### Markup
+For an input:
 ```
 <input ng-model="{model}" stripe-class />
+```
+For any other tag:
+```
+<anyTag stripe-class="{{ expression }}">...</anyTag>
 ```
 
 ### Card Number Validation Directive
