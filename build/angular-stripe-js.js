@@ -69,7 +69,15 @@ angular.module('vr.StripeJS.directives.class', ['vr.StripeJS.filters.cardType'])
 					elem.addClass(prevClass);
 				}
 				
-				scope.$watch(function() { return scope.$eval(attr.ngModel); }, function(number) {
+				function getCardNumber() {
+					if(angular.isDefined(attr.ngModel)) {
+						return scope.$eval(attr.ngModel);
+					} else {
+						return attr.stripeClass;
+					}
+				}
+				
+				scope.$watch(getCardNumber, function(number) {
 					setClass(number);
 				});
 			}
