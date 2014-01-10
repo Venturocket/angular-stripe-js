@@ -1,4 +1,4 @@
-# angular-stripe-js
+# angular-stripe-js [![Build Status](https://travis-ci.org/Venturocket/angular-stripe-js.png?branch=master)](https://travis-ci.org/Venturocket/angular-stripe-js)
 Stripe.js implementation for AngularJS
 
 ## Intro
