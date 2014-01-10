@@ -1,6 +1,6 @@
 {
     "name": "angular-stripe-js",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "main": "./build/angular-stripe-js.min.js",
     "ignore": [
         "**/.*",
@@ -8,9 +8,10 @@
         "components"
     ],
     "dependencies": {
-        "angular": "~1.0.8"
+        "angular": "~1.2.7"
     },
     "devDependencies": {
-        "angular-mocks": "*",        "angular-scenario": "*"
+        "angular-mocks": "*",
+		"angular-scenario": "*"
     }
 }
